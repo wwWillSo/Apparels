@@ -1,0 +1,10 @@
+.search_form{position:relative; height:31px; margin:0 auto;display:inline-block;}
+
+.search_form:hover{-webkit-box-shadow:0 0 3px #999;-moz-box-shadow:0 0 3px #999}
+
+.sinput{float:right; width:200px; height:20px; line-height:20px; padding:4px 7px; color:b3b3b3; border:1px solid #999; border-radius:2px 0 0 2px; background-color:#fbfbfb;margin-top:10px;}
+
+.sbtn{float:right; width:100px; height:31px; padding:0 12px; margin-right:50px; border-radius:0 2px 2px 0; border:1px solid #4d90fe; background-color:#4d90fe; cursor:pointer; display:inline-block; font-size:12px; vertical-align:middle; color:#f3f7fc;position:relative;}
+
+.sbtn:hover{background:#4084f2}
+.ibtn{float:right; width:30px; height:30px;margin-right:50px; margin-top:10px;margin-left: 10px;}

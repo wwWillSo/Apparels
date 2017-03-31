@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>/MyHtml.html</welcome-file>
+  </welcome-file-list>
+  
+  	<servlet>
+
+      <servlet-name>ShowUserServlet</servlet-name>
+
+      <servlet-class>adminServlet.ShowUserServlet</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+	
+	      <servlet-name>ShowUserServlet</servlet-name>
+	
+	      <url-pattern>/admin/showAdmin</url-pattern>
+	
+	</servlet-mapping>
+
+	<!-- product -->
+	<servlet>
+	      <servlet-name>ProductServlet</servlet-name>
+	      <servlet-class>adminServlet.product.ProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	      <servlet-name>ProductServlet</servlet-name>
+	      <url-pattern>/admin/showProduct</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	      <servlet-name>AddProductServlet</servlet-name>
+	      <servlet-class>adminServlet.product.AddProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	      <servlet-name>AddProductServlet</servlet-name>
+	      <url-pattern>/admin/addProduct</url-pattern>
+	</servlet-mapping>
+ 
+ 
+	<!-- User -->
+	<servlet>
+	      <servlet-name>UserRegisterServlet</servlet-name>
+	      <servlet-class>userServlet.UserRegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	      <servlet-name>UserRegisterServlet</servlet-name>
+	      <url-pattern>/user/signUp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	      <servlet-name>UserLoginServlet</servlet-name>
+	      <servlet-class>userServlet.UserLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	      <servlet-name>UserLoginServlet</servlet-name>
+	      <url-pattern>/user/userLogin</url-pattern>
+	</servlet-mapping>
+	
+	<!-- admin -->
+	<servlet>
+	      <servlet-name>AdminLoginServlet</servlet-name>
+	      <servlet-class>adminServlet.AdminLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	      <servlet-name>AdminLoginServlet</servlet-name>
+	      <url-pattern>/admin/adminLogin</url-pattern>
+	</servlet-mapping>
+	
+	<!-- basket -->
+	<servlet>
+	      <servlet-name>UserShowBasket</servlet-name>
+	      <servlet-class>userServlet.basket.UserShowBasket</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	      <servlet-name>UserShowBasket</servlet-name>
+	      <url-pattern>/user/userShowBasket</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	      <servlet-name>AddToBasket</servlet-name>
+	      <servlet-class>userServlet.basket.AddToBasket</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	      <servlet-name>AddToBasket</servlet-name>
+	      <url-pattern>/user/addToBasket</url-pattern>
+	</servlet-mapping>
+</web-app>

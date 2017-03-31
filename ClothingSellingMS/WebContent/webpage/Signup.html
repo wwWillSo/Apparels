@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Signup.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../css/basicGrey.css" />
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  <script language="javascript">
+	function isEmpty() {
+		if (document.getElementById("userid").value=="") {
+			document.getElementById("userId").innerHTML = "<div id='warning'>用户id不能为空！</div>" ;
+		}
+		if (document.getElementById("nickname").value=="") {
+			document.getElementById("nickName").innerHTML = "<div id='warning'>用户昵称不能为空！</div>" ;
+		}
+		if (document.getElementById("password").value=="") {
+			document.getElementById("passWord").innerHTML = "<div id='warning'>用户密码不能为空！</div>" ;
+		}
+	}
+</script>
+  <body bgcolor="#434343">
+    <form action="../user/signUp" method="post" class="basic-grey" enctype="multipart/form-data">
+	<h1>SIGN UP
+	<span>Please fill all the texts in the fields.</span>
+	</h1>
+	<label>
+	<span>User Name :</span>
+	<input id="user_name" type="text" name="name" placeholder="Your User Name" onblur="isEmpty();" />
+	</label>
+	<label>
+	<span>Your Password :</span>
+	<input id="password1" type="password" name="password" placeholder="Your Password" />
+	</label>
+	
+	<label>
+	<span>Confirm Again :</span>
+	<input id="password2" type="password" name="password" placeholder="Confirm Again" />
+	</label>
+	<label>
+	<span>Your TEL :</span>
+	<input id="name" type="text" name="TEL" placeholder="Your TEL Number	" />
+	</label>
+	<label>
+	<span>Your Email :</span>
+	<input id="email" type="email" name="email" placeholder="Valid Email Address" />
+	</label>
+	<label>
+	<span>Your Address :</span>
+	<textarea id="message" name="address" placeholder="Your Address Information to Us"></textarea>
+	</label>
+	<label>
+	<span>Upload Avatars</span><input type="file" name="avatars" id="portrait"/>
+	</label>
+	<br/><br/>
+	<label>
+	<span>&nbsp;</span>
+	<button type="submit" id="signup" class="button" >Sign</button>
+	<button type="reset" id="Sreset" class="button">Reset</button>
+	<button type="button" id="Scancel" class="button" onclick="location='navigation.html'">Cancel</button>
+	</label>
+	</form>
+	
+</body>
+</html>
